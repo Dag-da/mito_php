@@ -1,0 +1,18 @@
+/* reset style
+============== */
+
+* {
+    line-height: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: inherit;
+    text-transform: inherit;
+    box-sizing: border-box;
+    border: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}

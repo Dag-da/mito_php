@@ -1,0 +1,30 @@
+@import url(./reset.css);
+
+/* Helpers
+========== */
+
+.flex {
+    display: flex;
+}
+
+.container {
+    max-width: 50rem;
+    margin-inline: auto;
+}
+
+/* Header 
+=========*/
+
+.wrapper-header {
+    justify-content: space-between;
+    padding-block: 1rem;
+}
+
+/* logo */
+
+.header-logo {
+    width: 100%;
+}
+.header-logo {
+    width: 10rem;
+}
