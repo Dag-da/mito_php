@@ -1,5 +1,18 @@
 @import url(./reset.css);
 
+/* Balises
+========== */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
 /* Helpers
 ========== */
 
@@ -8,7 +21,7 @@
 }
 
 .container {
-    max-width: 80rem;
+    max-width: 90rem;
     margin-inline: auto;
 }
 
@@ -17,6 +30,7 @@
 
 .wrapper-header {
     justify-content: space-between;
+    align-items: center;
     padding-block: 1rem;
 }
 
@@ -26,13 +40,25 @@
     width: 100%;
 }
 .header-logo {
-    width: 10rem;
+    width: 5rem;
+}
+
+/* navigation */
+.wrapper-header-nav {
+    align-items: center;
+    gap: 1rem;
 }
 
 /* hero */
 
+.wrapper-header-hero-overlay {
+    min-height: 30rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 .wrapper-header-hero {
-    min-height: 15rem;
+    min-height: 30rem;
     width: 100%;
     background-image: url(../img/mito-header.jpeg);
     background-size: cover;

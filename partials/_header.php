@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <!-- my css -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <title><?= $title ?></title>
@@ -22,7 +26,7 @@
             </div>
             <!-- navigation -->
             <nav>
-                <ul class="flex">
+                <ul class="wrapper-header-nav flex">
                     <li><a href="index.php">Home</a></li>
                     <li><a href="products.php">Produits</a></li>
                     <li><a href="contact.php">Contact</a></li>
@@ -31,8 +35,10 @@
         </div>
         <!-- hero -->
         <div class="wrapper-header-hero">
-            <p class="">Le leader français du Bio</p>
-            <h1 class="">Bienvenue chez Mito</h1>
+            <div class="wrapper-header-hero-overlay">
+                <p class="">Le leader français du Bio</p>
+                <h1 class="">Bienvenue chez Mito</h1>
+            </div>
         </div>
     </header>
     <!-- end header -->
