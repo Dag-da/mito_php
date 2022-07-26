@@ -11,6 +11,9 @@
     box-sizing: border-box;
     border: none;
     color: inherit;
+    margin: 0;
+    padding: 0;
+
 }
 
 ul {

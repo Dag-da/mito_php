@@ -8,7 +8,7 @@
 }
 
 .container {
-    max-width: 50rem;
+    max-width: 80rem;
     margin-inline: auto;
 }
 
@@ -27,4 +27,13 @@
 }
 .header-logo {
     width: 10rem;
+}
+
+/* hero */
+
+.wrapper-header-hero {
+    min-height: 15rem;
+    width: 100%;
+    background-image: url(../img/mito-header.jpeg);
+    background-size: cover;
 }
