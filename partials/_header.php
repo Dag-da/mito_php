@@ -26,18 +26,32 @@
             </div>
             <!-- navigation -->
             <nav>
+        <?php 
+        $current_page = $_SERVER["PHP_SELF"];
+        $home;
+        $products;
+        $contact;
+        if ($current_page === "/mito_php/index.php") {
+            $home = "active";
+        } else if ($current_page === "/mito_php/products.php") {
+            $products = "active";
+        } else {
+            $contact = "active";
+        }
+        var_dump($current_page) 
+        ?>  
                 <ul class="wrapper-header-nav flex">
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="products.php">Produits</a></li>
-                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="index.php" class="<?= $home ?>">Home</a></li>
+                    <li><a href="products.php" class="<?= $products ?>">Produits</a></li>
+                    <li><a href="contact.php" class="<?= $contact ?>">Contact</a></li>
                 </ul>
             </nav>
         </div>
         <!-- hero -->
         <div class="wrapper-header-hero">
             <div class="wrapper-header-hero-overlay">
-                <p class="">Le leader français du Bio</p>
-                <h1 class="">Bienvenue chez Mito</h1>
+                <p class="container">Le leader français du Bio</p>
+                <h1 class="container">Bienvenue chez Mito</h1>
             </div>
         </div>
     </header>
